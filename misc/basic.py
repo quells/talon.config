@@ -27,6 +27,7 @@ symbols = {
     "minus": "-",
     "dash": "-",
     "equals": "=",
+    "low dash": "_",
 }
 modifiers = {
     "command": "cmd",
