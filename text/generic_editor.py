@@ -65,14 +65,10 @@ keymap = {
     "(trundle | comment)": toggle_comments,
     "(trundle | comment)"
     + numerals(): jump_to_bol_and(toggle_comments),  # noop for plain/text
-    "snipline" + optional_numerals(): jump_to_bol_and(snipline),
-    "sprinkle" + optional_numerals(): jump_to_bol,
-    "spring" + optional_numerals(): jump_to_eol_and(jump_to_beginning_of_text),
-    "sprinkoon" + numerals(): jump_to_eol_and(lambda: press("enter")),
-    "dear" + optional_numerals(): jump_to_eol_and(lambda: None),
+    "snipline": [Key("cmd-left"), Key("cmd-shift-right"), Key("cmd-x")],
+    "head": Key("cmd-left"),
+    "tail": Key("cmd-right"),
     "smear" + optional_numerals(): jump_to_eol_and(jump_to_nearly_end_of_line),
-    # general
-    "fullscreen": Key("ctrl-cmd-f"),
     # file
     # "new": Key("cmd-n"),
     "(save | safe)": Key("cmd-s"),
