@@ -16,7 +16,6 @@ keymap = {
     "max (split | pane)": Key("shift-cmd-enter"),
     "move tab left": Key("shift-cmd-left"),
     "move tab right": Key("shift-cmd-right"),
-    "(subble | subtle)": "subl ",
     "(scratch | scrap)": Key("ctrl-u"),
     "(shell | i term )search": Key("cmd-f"),
     "jump back": Key("ctrl-[ b"),
